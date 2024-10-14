@@ -1,0 +1,29 @@
+.header {
+  margin-top: 26px;
+  margin-left: 174px;
+  color: var(--light-color);
+
+  &__logo {
+    margin-right: 25px;
+    width: 225px;
+    height: 60px;
+    background: url("../../img/logo.png") center center / cover;
+  }
+
+  &__nav {
+    @include flex-v-center;
+  }
+
+  &__links {
+    ul {
+      @include flex-v-center;
+      list-style: none;
+      gap: 57px;
+
+      a {
+        font-size: 18px;
+        color: var(--light-color);
+      }
+    }
+  }
+}
