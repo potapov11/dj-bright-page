@@ -15,7 +15,7 @@
     position: relative;
     flex-grow: 1;
     height: 2px;
-    background-color: blue;
+    background-color: var(--violet-main);
   }
 
   &__line-blue {
@@ -24,14 +24,28 @@
     justify-content: end;
     width: 20%;
     height: 2px;
-    background-color: blue;
+    background-color: var(--violet-main);
+  }
+
+  &__box-trigger {
+    width: 20px;
+    height: 20px;
+    transform: translate(10px, -8px);
+    cursor: pointer;
+
+    @include flex-all-center;
+
+    &:hover .trek__line-blue-vertical {
+      height: 20px;
+    }
   }
 
   &__line-blue-vertical {
+    display: block;
     width: 2px;
     height: 15px;
-    background-color: beige;
-    transform: translateY(-6px);
+    background-color: var(--light-color);
+    transition: height var(--transition-03) linear;
   }
 
   &__line-inner {

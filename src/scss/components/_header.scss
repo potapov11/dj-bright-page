@@ -23,6 +23,12 @@
       a {
         font-size: 18px;
         color: var(--light-color);
+        cursor: pointer;
+        transition: letter-spacing var(--transition-03) linear;
+
+        &:hover {
+          letter-spacing: 10px;
+        }
       }
     }
   }

@@ -1,0 +1,53 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 140px;
+
+  &__img-box {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: opacity var(--transition-03) linear;
+
+    img {
+      transition: transform var(--transition-03) linear;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+      width: 100%;
+      height: 90px;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--light-color);
+      font-weight: 500;
+      background-color: rgba(122, 102, 204, 0.7);
+      line-height: 22px;
+      border-radius: 20px 0;
+    }
+
+    &--working::after {
+      content: "Working on my upcoming full-length album that's releasing later this year.";
+    }
+
+    &--listen::after {
+      content: "Halloween vibes. Listen my new track!";
+    }
+    &--looking::after {
+      content: "WarForLove is OUT NOW!! Stream it here!";
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
