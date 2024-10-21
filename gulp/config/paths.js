@@ -1,5 +1,5 @@
-const srcFolder = './src';
-const buildFolder = './app';
+const srcFolder = "./src";
+const buildFolder = "./app";
 
 export const paths = {
   base: {
@@ -8,6 +8,8 @@ export const paths = {
   },
   srcSvg: `${srcFolder}/img/svg/**.svg`,
   srcImgFolder: `${srcFolder}/img`,
+  srcAudioFolder: `${srcFolder}/audio`,
+  buildAudioFolder: `${buildFolder}/audio`,
   buildImgFolder: `${buildFolder}/img`,
   srcScss: `${srcFolder}/scss/**/*.scss`,
   buildCssFolder: `${buildFolder}/css`,
